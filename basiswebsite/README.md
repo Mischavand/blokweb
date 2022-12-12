@@ -98,7 +98,7 @@ https://www.dunkin.nl/
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images /Custom-1.png" width="375px" alt="Dunkin Donuts homepage">
+  <img src="readme-images/Custom-1.png" width="375px" alt="Dunkin Donuts homepage">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/Custom-2.png" width="375px" alt="Dunkin Donuts blogs pagina">
@@ -251,7 +251,8 @@ https://www.dunkin.nl/
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="read-images/header.png" width="375px" alt="uitkomst opdracht 1">
+  Ik weet eerlijk gezegd niet echt wat hiermee bedoeld wordt. Ik vind de heading met de bovenste tekst regel wel typische dunking donuts met alle kleuren ook. Voor de rest staan allen leuke en nog niet gelukte dingen beneden.
+  <img src="readme-images/header.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
