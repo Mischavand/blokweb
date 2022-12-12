@@ -98,7 +98,8 @@ https://www.dunkin.nl/
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/Custom-1.png" width="375px" alt="Dunkin Donuts homepage">
+  <img src="readme-images/breakdown.png" width="375px" alt="hhh">
+  <img src="readme-images/.png" width="375px" alt="Eerste versie website">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/Custom-2.png" width="375px" alt="Dunkin Donuts blogs pagina">
