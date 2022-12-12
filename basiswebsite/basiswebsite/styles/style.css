@@ -1,0 +1,879 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;  
+}
+/* https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome */
+*:focus {
+    outline: none;
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+@font-face {
+	font-family: 'Dunkin'; 
+	src: url("../font/Dunkin.otf") format('opentype');
+	/* https://www.dafont.com/dunkin.font */
+}
+
+* {
+	font-family: 'Dunkin', 'Comic sans', 'ariel'
+}
+
+.visuallyHidden{
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+label {
+	clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+:root {
+	--oranje:#ff6e0c;
+	--second-color:#DEBD8E;
+	--third-color: #DEBD8E;
+	--paars: #F30C90;
+	--paars-logo:#F30C90;
+	--wit: white;
+	--grijs: #AAAAAA;
+	--roze: #f950ad;
+	--licht-grijs: #F5F5F5;
+	--licht-blauw:#99D6E9;
+	--donker-oranje: #ED4C28;
+	--bruin: #512d00;
+	--blauw: blue;
+	--donker-grijs: #F0F0F0;
+	--grijs-zwart: #3d3c3c;
+	--zwart: black;
+	--wit-nav: white;
+	--wit-sluit-menu: white;
+	--menu-button: #F5F5F5;
+	--zwart-button: black;
+	--wit-muziek: white;
+  }
+
+  @media (prefers-color-scheme: dark) {
+	:root {
+	/* startje */
+	--wit:#202124;
+	--licht-grijs:#202124;
+	--wit-nav: #F30C90;
+	--zwart: #AAAAAA;
+	--bruin: #AAAAAA;
+	--paars-logo: #ff630c;
+	--wit-sluit-menu: #202124;
+	--menu-button: #ff630c;
+	--wit-muziek: #ff630c;
+	}
+}
+
+/* https://codepen.io/Thogronen/pen/BaVPMVR */
+body {
+		width: 100%;
+		background: linear-gradient(
+		  to bottom,
+		  var(--wit) 0%,
+		  var(--wit) 18%,
+		  var(--licht-grijs) 18%,
+		  var(--licht-grijs) 50%,
+		  var(--wit) 50%,
+		  var(--wit) 70%,
+		  var(--licht-grijs) 70%,
+		  var(--licht-grijs) 100%
+		);
+}
+
+
+
+main {
+	margin: 0em 1em;
+}
+
+.DDBLOGS h1 {
+	text-align: center;
+	background-color: var(--paars);
+	color: var(--wit);
+	font-size: xxx-large;
+	margin-bottom: 0.5em;
+}
+
+main section:nth-of-type(1) {
+	background-color: var(--second-color);
+	margin: 1em;
+	border-radius: 2em;
+}
+
+section:nth-of-type(1) p {
+	color: var(--wit);
+}
+
+main section:nth-of-type(1) div {
+	height: 300px;
+	overflow: hidden;
+}
+
+main section:nth-of-type(1) img {
+	width:100%;
+	padding: 2em 4em 0em 4em;
+}
+
+main section:nth-of-type(5) p {
+	color: var(--grijs);
+	margin: 0em 1em 1em 1em;
+	
+}
+
+header section > a:first-of-type img {
+	width:100px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+body li:nth-of-type(2) img {
+	/* sdkdjjdd */
+	width:150px;
+}
+
+header p{
+	background-color: var(--oranje);
+	padding: 0.7em;
+	width: 100vw;
+	color: var(--wit);
+	font-size: x-small;
+	text-align: center;
+}
+
+main h2:nth-of-type(2) {
+	color: var(--paars);
+}
+
+section:first-of-type p {
+ text-align: center;
+ font-size: xx-large;
+}
+
+main section:nth-of-type(2) {
+	display: grid;
+	background-color: var(--paars);
+	grid-template-rows: 2fr 1fr 2fr;
+	grid-template-columns:  repeat(2, 1fr);
+	padding: 1rem;
+	gap: .5rem;
+	margin: 1em;
+	border-radius: 1em;
+}
+
+section:nth-of-type(2) h2 {
+	grid-column: 1 / span 2;
+	margin: auto;
+	color: var(--wit);
+}
+
+main section:nth-of-type(2) p {
+	grid-column: 1 / span 2;
+	margin-top: 0.2em;
+	color: var(--wit);
+}
+
+main section:nth-of-type(2) a {
+	padding: 1rem;
+	text-align: center;
+	border-radius: 1em;
+	text-decoration: none;
+	align-self: center;
+}
+
+main section:nth-of-type(2) a:first-of-type {
+	background-color: var(--wit);
+	grid-column: 1;
+	color: var(--paars);
+}
+
+main section:nth-of-type(2) a:last-of-type {
+	grid-column: 2;
+	background-color: var(--roze);
+	color: var(--wit);
+}
+
+ol li:nth-of-type(2) img {
+	border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section:nth-of-type(3) h2 { 
+	color: var(--paars);
+	margin: 0.5em;
+}
+
+span:first-of-type {
+	color: var(--oranje);
+
+}
+
+section:nth-of-type(3) li {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	grid-template-columns: 1fr 4fr;
+	margin: 1em ;
+}
+
+section:nth-of-type(3) li img {
+	background-color: var(--paars);
+	border-radius: 5em;
+	grid-row: 1 / -1;
+	grid-column: 1;
+	width: 3em;
+	margin: 0em 1em 0em 0em;
+	transform: translateY(20%);
+	padding: 0.4em;
+}
+
+section:nth-of-type(3) li:nth-of-type(2) img {
+	background-color: var(--oranje);
+	transform: translateY(20%);
+}
+
+section:nth-of-type(3) li p {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	color: var(--grijs);
+	font-size: x-small;
+}
+
+section:nth-of-type(3) li h3 {
+	grid-column: 2 / -1;
+	grid-row-start: 1;	
+	color: var(--paars);
+	font-size: large;
+	margin-bottom: 0.5em;
+}
+
+body h2:first-of-type {
+	font-size: xxx-large;
+}
+
+section:nth-of-type(4) {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--licht-blauw);
+	margin: 1em 0em;
+	align-items: center;
+	text-align: center;
+	border-radius: 2em;
+}
+
+section:nth-of-type(4) h2{
+	color:var(--wit);
+	margin: 0.6em;
+}
+
+section:nth-of-type(4) p{
+	color:var(--wit);
+	margin: 0.5em;
+}
+
+section:nth-of-type(4) p:nth-of-type(2){
+	margin: 0.5em;
+}
+
+section:nth-of-type(4) img{
+	margin: 0.7em;
+}
+
+section:nth-of-type(4) div img {
+	/* dkdkkdkdkdk */
+	height:500px;
+	margin: 0.7em;
+	transform: translateX(-27%);
+}
+
+section:nth-of-type(4) div {
+	/* sskskksks */
+	height: 250px;
+	overflow: hidden;
+	width: 100%;
+}
+
+section:nth-of-type(5) {
+	position:relative; 
+	display: flex;
+	flex-direction: column;
+}
+
+section:nth-of-type(5) img:nth-of-type(1) {
+	width: 100%;
+	border-radius: 2em;
+}
+
+section:nth-of-type(5) img:nth-of-type(2) {
+	background-color: var(--oranje);
+	border-radius: 4em;
+	width: 100px;
+	padding: 1em;
+	position: absolute;
+	right: 5%;
+	top: 37%;
+}
+
+section:nth-of-type(5) h2 {
+	color: var(--paars);
+	margin: 2em 0.3em 0.5em;
+	font-size: xx-large;
+}
+
+section:nth-of-type(5) a {
+	text-decoration: none;
+	color: var(--wit);
+	border-radius: 4em;
+	background-color: var(--oranje);
+	padding: 0.8em 0em;
+	text-align: center;
+	margin: 1em;
+}
+
+section:nth-of-type(6) {
+	display: flex;
+	flex-direction: column;
+	margin: 1em 0em;
+}
+
+section:nth-of-type(6) a {
+	background-color: var(--oranje);
+	border-radius: 2em;
+	padding: 0.8em 0em;
+	text-decoration: none;
+	color: var(--wit);
+	text-align: center;
+	margin: 1em;
+}
+
+section:nth-of-type(6) h2 {
+	color: var(--oranje);
+	margin: 0em 0em 0em 0.3em;
+}
+
+section:nth-of-type(6) span {
+	color: var(--paars);
+}
+
+section:nth-of-type(7) {
+	display: flex;
+	flex-direction: column;
+	border: 0.2em solid var(--donker-grijs);
+	border-radius: 2em;
+	margin-bottom: 3em;
+}
+
+section:nth-of-type(7) img {
+	width: auto;
+	border-radius: 1em;
+	margin: 1em;
+	align-items: center;
+}
+
+section:nth-of-type(7) p:first-of-type {
+	color: var(--wit);
+	border-radius: 1.5em;
+	background-color: var(--paars);
+	text-align: center;
+	padding: 0.3em 1.5em;
+	margin: 0em auto 0em 1em;
+}
+
+section:nth-of-type(7) p:nth-of-type(2) {
+	font-size: large;
+	margin-top: 0.7em;
+	margin-bottom: 1em;
+	margin-left: 1.5em;
+	color: var(--zwart);
+}
+
+section:nth-of-type(8) {
+	display: flex;
+	background-color: var(--licht-grijs);
+	justify-content: center;
+	padding: 1em 0em;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+section:nth-of-type(8) a {
+	text-decoration: none;
+	background-color: var(--oranje);
+	color:var(--wit);
+	font-size: large;
+	border-radius: 2em;
+	padding: 0.8em 0em;
+	width: 90%;
+	text-align: center;
+}
+
+footer {
+	margin-bottom: 4.5em;
+}
+
+footer section aside a img:nth-of-type(1) {
+	width: 2em;;
+	border-radius: 1em;
+	background-color: var(--wit);
+	padding: 0.3em;
+	height: 2em;
+}
+
+footer section {
+	background-color: var(--oranje);
+	position: relative;
+	display: grid;
+	gap: 1em;
+	padding-bottom: 1em;
+}
+
+footer section > img {
+	width: 160px;
+	border-radius: 10em;
+	background-color: var(--licht-grijs);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%) rotate(-15deg);
+	top: -40%;
+	box-shadow:var(--grijs-zwart) 0.2em 0.2em 0.5em;
+}
+
+footer section:first-of-type > a {
+	text-decoration: none;
+	color: var(--wit);
+	background-color: var(--donker-oranje);
+	border-radius: 3em;
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+	width: 85%;
+	font-size: large;
+	text-align: center;
+	margin: auto;;
+}
+
+footer section:nth-of-type(2) {
+	display: flex;
+	background-color: var(--licht-grijs);
+	margin: 1.5em;
+}
+
+footer section:nth-of-type(2) p {
+	font-size: xx-small;
+	color: var(--grijs);
+}
+
+footer section:nth-of-type(2) a {
+	font-size: xx-small;
+	color: var(--grijs);
+	text-decoration: none;
+}
+
+aside {
+	display: flex;
+	height: 1.2em;
+	justify-content: center;
+	gap: 1em;
+}
+
+ol {
+	display: flex;
+	justify-content:space-evenly;
+	list-style-type: none;
+}
+
+.DDBLOGS {
+	width: 100%;
+	background: linear-gradient(
+	  to bottom,
+	  var(--paars) 0%,
+	  var(--paars) 40%,
+	  var(--wit) 40%,
+	  var(--wit) 90%,
+	  var(--licht-grijs) 90%, 
+	  var(--licht-grijs) 100%
+	);
+}
+
+.DDBLOGS footer {
+	margin: 0em;
+}
+
+.DDBLOGS body section:nth-of-type(1) {
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	padding: 0em;
+}
+
+.DDBLOGS main section:nth-of-type(1) {
+	background-color: var(--paars);
+}
+
+
+.DDBLOGS input {
+	border-radius: 2em;
+	justify-content: center;
+	width: 100%;
+	padding: 0.6em 0.8em;
+	margin: 0.5em;
+	background-color: var(--paars);
+	border: solid var(--wit);
+}
+
+.DDBLOGS input::placeholder {
+    color: var(--wit);
+}
+
+.DDBLOGS select {
+	border-radius: 2em;
+	color: var(--paars);
+	margin: 0.5em;
+	width: 100%;
+	padding: 0.6em 0.8em;
+	background-color: var(--wit);
+}
+
+.DDBLOGS a {
+	text-decoration: none;
+}
+
+.DDBLOGS a section:nth-of-type(1) {
+	margin: 3.5em 1em 3em 1em;
+	display: flex;
+	flex-direction: column;
+	border-color: var(--licht-grijs);
+	padding: 0em;
+	background-color: var(--wit);
+	border: 0.3em solid var(--licht-grijs);
+}
+
+.DDBLOGS a section:nth-of-type(1) img:nth-of-type(1) {
+	width: auto;
+	border-radius: 1em;
+	margin: 1em;
+	padding: 0;
+}
+
+.DDBLOGS a section:nth-of-type(1) p:nth-of-type(1) {
+	background-color: var(--oranje);
+	border-radius: 1em;
+	padding: 0.3em 1.5em;
+	margin: 0em auto 0em 1em;
+	font-size: medium;
+}
+
+.DDBLOGS a section:nth-of-type(1) p:nth-of-type(2) {
+	color: var(--bruin);
+	margin: 1.5em;
+	font-size: medium;
+	text-align: left;
+}
+
+form {
+	background-color: var(--paars);
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+a:focus-visible {
+	border: 0.3em solid;
+	border-color: var(--paars);
+	padding: 0.5em;
+}
+
+header section > a:first-of-type:focus-visible {
+	border: 0.5em solid var(--paars-logo);
+	padding: 0.5em;
+}
+
+footer a:focus-visible {
+	border: 0.5em solid var(--paars);
+	padding: 0.5em;
+}
+
+select:focus-visible {
+	border: 0.5em solid var(--oranje);
+	color: var(--oranje);
+}
+
+input:focus-visible {
+	border: 0.5em solid var(--oranje);
+}
+
+main section:nth-of-type(2) a:focus-visible {
+	border: 0.5em solid var(--oranje);
+}
+
+.DDBLOGS main > a:first-of-type:focus-visible {
+	border: 0.5em solid var(--oranje);
+} 
+
+nav a:focus-within {
+	border: 0.5em solid var(--paars);
+	padding: 0.5em;
+}
+
+section:nth-of-type(8) a:active {
+	border: solid 0.2em var(--oranje);
+	color: var(--oranje);
+	background-color: var(--wit);
+}
+
+section:nth-of-type(3) ol {
+	display: flex;
+	flex-direction: column;
+}
+
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+body {
+	margin:0;
+	background-color:var(--general-background);
+	color:var(--general-color);
+  }
+  
+  
+  
+  
+  
+  /******************************************************/
+  /* styling voor de small-screen versie van de website */
+  /******************************************************/
+  
+  /*************/
+  /* DE HEADER */
+  /*************/
+  header > section {
+	min-height:4em;
+	padding:0 1em;
+	line-height:1;
+	
+	/* JOUW CODE HIER - stap 3 */
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+	position:sticky;
+	top:0;
+	border-bottom: solid 0.05em var(--licht-grijs);
+	background-color: var(--wit-nav);
+  }
+  
+  header > section:first-of-type button:nth-of-type(2) img {
+	  height: 1em;
+  }
+
+  /* alle links in de header */
+  header > section li a {
+	padding:.5em 0;
+	color:var(--general-color);
+	text-decoration:none;
+  }
+  
+  header section > button:first-of-type {
+	background-image: url("../images/muziekuit.png");
+    background-size: cover;
+    width: 3em;
+	height: 3.5em;
+	background-color: var(--wit-muziek);
+  }
+  
+  /*****************/
+  /* BEIDE BUTTONS */
+  /*****************/
+  header section > button:first-of-type {
+	padding:.5em;
+	
+	/* icon en tekst met gap-je naast elkaar */
+	display:flex;
+	align-items:center;
+	gap:.25em;
+	
+	/* standaard styling aanpassen */
+	appearance:none;
+	background-color:var(--licht-grijs);
+	border:none;
+	border-radius:.25em; 
+	font:inherit;
+	text-align:center;
+	color:var(--zwart);
+  }
+
+  header section button:nth-of-type(2) {
+	padding:.5em;
+	
+	/* icon en tekst met gap-je naast elkaar */
+	display:flex;
+	align-items:center;
+	gap:.25em;
+	
+	/* standaard styling aanpassen */
+	appearance:none;
+	background-color:var(--menu-button);
+	border:none;
+	border-radius:.25em; 
+	font:inherit;
+	text-align:center;
+	color:var(--zwart-button);
+  }
+  
+  header section div {
+	display: flex;
+	justify-content: space-between;
+    width: 50%;
+	margin-top: 0.5em;
+
+  } 
+ 
+  header section div img {
+	height: 1.4em;
+	background-color: var(--licht-grijs);
+	padding: 0.2em;
+	border-radius: 1em;
+	width: 1.4em;
+  }
+  
+  
+  
+  /***************/
+  /* MENU BUTTON */
+  /***************/
+  header section button:nth-of-type(2) {
+	/* JOUW CODE HIER - stap 3 */
+	order: 3;
+  }
+  
+  
+  
+  /***************/
+  /* SLUIT BUTTON */
+  /***************/
+  nav button {
+   justify-self:start;
+   
+  }
+  
+  
+  
+  
+  
+  /************/
+  /* HET MENU */
+  /************/
+  nav {
+	padding:1em;
+	
+	display:grid;
+	align-content:start;
+	gap:1em;
+	
+	
+	/* JOUW CODE HIER - stap 1 */
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	/* JOUW CODE HIER - stap 2 */
+	transform:translatex(-100%);
+	
+	/* JOUW CODE HIER - stap 4 */
+	transition:transform .3s;
+
+	background-color: var(--wit-nav);
+  }
+  
+  /* als menu open is */
+  nav.toonMenu {
+	/* JOUW CODE HIER - stap 4 */
+	transform:translatex(0);
+  }
+  
+  
+  
+  
+  
+  /*******************/
+  /* LIJST MET LINKS */
+  /*******************/
+  nav ul { 
+	margin:0; 
+	padding:0em;
+	list-style:none;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 375px;
+	font-size: xx-large;
+  }
+  
+  header ul li {
+	  padding: 0.5em;
+  }
+  
+  
+  /************************/
+  /* EEN LINK IN DE LIJST */
+  /************************/
+  
+  section:nth-of-type(3) li:hover {
+	transform: scale(0.9);
+  }
+  
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration, was in de les en oefeningen besproken maar was het vergeten */
+  header section > a:nth-of-type(1):hover {
+  transform: rotate(360deg) scale(1.5);
+  transition-duration: 2s;
+  }
+  
+  
+  
+  
+  
