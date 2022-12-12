@@ -274,7 +274,7 @@ https://www.dunkin.nl/
   <img src="readme-images/nav-normaal.png" width="375px" alt="Nav foto">
 
   Het is me niet gelukt om de pijltjes mooier en meer naar links te krijgen. Dit bevatte heel veel code die ik gewoon weg niet begreep dus heb ik het ook niet toegepast.
-  <img src="readme-images/betere-pijltjes" width="375px" alt="dropdown foto">
+  <img src="readme-images/betere-pijltjes.png" width="375px" alt="dropdown foto">
 </details>
 
 
