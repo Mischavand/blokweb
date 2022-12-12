@@ -98,14 +98,13 @@ https://www.dunkin.nl/
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdown.png" width="375px" alt="hhh">
-  <img src="readme-images/.png" width="375px" alt="Eerste versie website">
+  <img src="readme-images/breakdown.png" width="375px" alt="Breakdown pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/Custom-2.png" width="375px" alt="Dunkin Donuts blogs pagina">
+  <img src="readme-images/breakdown-twee.png" width="375px" alt="Dunkin Donuts blogs pagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/Custom-3.png" width="375px" alt="Menu breakdown">
+  <img src="readme-images/breakdown-menu.png" width="375px" alt="Menu breakdown">
 
 </details>
 
