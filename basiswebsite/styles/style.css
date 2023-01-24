@@ -125,7 +125,7 @@ main {
 
 .DDBLOGS h1 {
 	text-align: center;
-	background-color: var(--paars);
+	background-color: var(--oranje);
 	color: var(--wit);
 	font-size: xxx-large;
 	margin-bottom: 0.5em;
@@ -190,14 +190,14 @@ section:first-of-type p {
  font-size: xx-large;
 }
 
-main section:nth-of-type(2) {
+.Homepage section:nth-of-type(2) {
 	display: grid;
 	background-color: var(--paars);
 	grid-template-rows: 2fr 1fr 2fr;
 	grid-template-columns:  repeat(2, 1fr);
 	padding: 1rem;
 	gap: .5rem;
-	margin: 1em;
+	margin: 1em 1em 2.7em 1em;
 	border-radius: 1em;
 }
 
@@ -225,12 +225,22 @@ main section:nth-of-type(2) a:first-of-type {
 	background-color: var(--wit);
 	grid-column: 1;
 	color: var(--paars);
+	transition: all .2s ease-in-out;
+}
+
+main section:nth-of-type(2) a:first-of-type:hover {
+	transform: scale(1.1);
 }
 
 main section:nth-of-type(2) a:last-of-type {
 	grid-column: 2;
-	background-color: var(--roze);
-	color: var(--wit);
+	background-color: var(--wit);
+	color: var(--paars);
+	transition: all .2s ease-in-out;
+}
+
+main section:nth-of-type(2) a:last-of-type:hover {
+	transform: scale(1.1);
 }
 
 ol li:nth-of-type(2) img {
@@ -254,7 +264,7 @@ section:nth-of-type(3) li {
 	display: grid;
 	grid-template-rows: 1fr 2fr;
 	grid-template-columns: 1fr 4fr;
-	margin: 1em ;
+	margin: 0em 1em 0em 1em ;
 }
 
 section:nth-of-type(3) li img {
@@ -296,7 +306,7 @@ section:nth-of-type(4) {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--licht-blauw);
-	margin: 1em 0em;
+	margin: 1.5em 0em 1em 0em;
 	align-items: center;
 	text-align: center;
 	border-radius: 2em;
@@ -352,12 +362,12 @@ section:nth-of-type(5) img:nth-of-type(2) {
 	padding: 1em;
 	position: absolute;
 	right: 5%;
-	top: 37%;
+	top: 35%;
 }
 
 section:nth-of-type(5) h2 {
 	color: var(--paars);
-	margin: 2em 0.3em 0.5em;
+	margin: 1.5em 0.3em 0.5em;
 	font-size: xx-large;
 }
 
@@ -368,13 +378,17 @@ section:nth-of-type(5) a {
 	background-color: var(--oranje);
 	padding: 0.8em 0em;
 	text-align: center;
-	margin: 1em;
+	margin: 1em 1em 2.5em 1em;
+	transition: all .2s ease-in-out;
+}
+
+section:nth-of-type(5) a:hover {
+	transform: scale(1.1);
 }
 
 section:nth-of-type(6) {
 	display: flex;
 	flex-direction: column;
-	margin: 1em 0em;
 }
 
 section:nth-of-type(6) a {
@@ -384,8 +398,14 @@ section:nth-of-type(6) a {
 	text-decoration: none;
 	color: var(--wit);
 	text-align: center;
-	margin: 1em;
+	margin: 1em 1em 3em 1em;
+	transition: all .2s ease-in-out;
 }
+
+section:nth-of-type(6) a:hover {
+	transform: scale(1.1);
+}
+
 
 section:nth-of-type(6) h2 {
 	color: var(--oranje);
@@ -401,7 +421,7 @@ section:nth-of-type(7) {
 	flex-direction: column;
 	border: 0.2em solid var(--donker-grijs);
 	border-radius: 2em;
-	margin-bottom: 3em;
+	margin-bottom: 3.2em;
 }
 
 section:nth-of-type(7) img {
@@ -449,6 +469,11 @@ section:nth-of-type(8) a {
 	padding: 0.8em 0em;
 	width: 90%;
 	text-align: center;
+	transition: all .2s ease-in-out;
+}
+
+section:nth-of-type(8) a:hover {
+	transform: scale(1.1);
 }
 
 footer {
@@ -461,14 +486,16 @@ footer section aside a img:nth-of-type(1) {
 	background-color: var(--wit);
 	padding: 0.3em;
 	height: 2em;
+	margin-top: 0.4em;
 }
+
 
 footer section {
 	background-color: var(--oranje);
 	position: relative;
 	display: grid;
-	gap: 1em;
 	padding-bottom: 1em;
+	grid-template-rows: 20%;
 }
 
 footer section > img {
@@ -478,7 +505,7 @@ footer section > img {
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%) rotate(-15deg);
-	top: -40%;
+	top: -85%;
 	box-shadow:var(--grijs-zwart) 0.2em 0.2em 0.5em;
 }
 
@@ -529,8 +556,8 @@ ol {
 	width: 100%;
 	background: linear-gradient(
 	  to bottom,
-	  var(--paars) 0%,
-	  var(--paars) 40%,
+	  var(--oranje) 0%,
+	  var(--oranje) 40%,
 	  var(--wit) 40%,
 	  var(--wit) 90%,
 	  var(--licht-grijs) 90%, 
@@ -550,9 +577,8 @@ ol {
 }
 
 .DDBLOGS main section:nth-of-type(1) {
-	background-color: var(--paars);
+	background-color: var(--oranje);
 }
-
 
 .DDBLOGS input {
 	border-radius: 2em;
@@ -560,7 +586,7 @@ ol {
 	width: 100%;
 	padding: 0.6em 0.8em;
 	margin: 0.5em;
-	background-color: var(--paars);
+	background-color: var(--oranje);
 	border: solid var(--wit);
 }
 
@@ -570,7 +596,7 @@ ol {
 
 .DDBLOGS select {
 	border-radius: 2em;
-	color: var(--paars);
+	color: var(--oranje);
 	margin: 0.5em;
 	width: 100%;
 	padding: 0.6em 0.8em;
@@ -581,6 +607,10 @@ ol {
 	text-decoration: none;
 }
 
+.DDBLOGS a:focus-visible {
+	border: 1em var(--zwart);
+}
+
 .DDBLOGS a section:nth-of-type(1) {
 	margin: 3.5em 1em 3em 1em;
 	display: flex;
@@ -589,6 +619,11 @@ ol {
 	padding: 0em;
 	background-color: var(--wit);
 	border: 0.3em solid var(--licht-grijs);
+	transition: all .2s ease-in-out;
+}
+
+.DDBLOGS section:hover {
+	transform: scale(1.02);
 }
 
 .DDBLOGS a section:nth-of-type(1) img:nth-of-type(1) {
@@ -599,7 +634,7 @@ ol {
 }
 
 .DDBLOGS a section:nth-of-type(1) p:nth-of-type(1) {
-	background-color: var(--oranje);
+	background-color: var(--paars);
 	border-radius: 1em;
 	padding: 0.3em 1.5em;
 	margin: 0em auto 0em 1em;
@@ -614,52 +649,94 @@ ol {
 }
 
 form {
-	background-color: var(--paars);
+	background-color: var(--oranje);
 	align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 a:focus-visible {
-	border: 0.3em solid;
-	border-color: var(--paars);
+	border: 0.5em solid;
+	border-color: var(--zwart);
 	padding: 0.5em;
+	color: var(--zwart);
 }
 
 header section > a:first-of-type:focus-visible {
-	border: 0.5em solid var(--paars-logo);
+	border: 0.5em solid var(--zwart);
 	padding: 0.5em;
+	color: var(--zwart);
 }
 
 footer a:focus-visible {
-	border: 0.5em solid var(--paars);
+	border: 0.5em solid var(--zwart);
 	padding: 0.5em;
+	color: var(--zwart);
 }
 
 select:focus-visible {
-	border: 0.5em solid var(--oranje);
-	color: var(--oranje);
+	border: 0.5em solid var(--zwart);
+	color: var(--zwart);
 }
 
 input:focus-visible {
-	border: 0.5em solid var(--oranje);
+	border: 0.5em solid var(--zwart);
+	color: var(--zwart);
 }
 
 main section:nth-of-type(2) a:focus-visible {
-	border: 0.5em solid var(--oranje);
+	border: 0.5em solid var(--zwart);
+	color: var(--zwart);
+}
+
+main section:nth-of-type(2) a:first-of-type:focus-visible {
+	border: 0.5em solid var(--zwart);
+	color: var(--zwart);
+}
+
+main section:nth-of-type(2) a:last-of-type:focus-visible {
+	border: 0.5em solid var(--zwart);
+	color: var(--zwart);
+}
+
+section:nth-of-type(8) a:focus-visible {
+	border: 0.5em solid var(--zwart);
+	color: var(--zwart);
+}
+
+header section > a:first-of-type:focus-visible {
+	border: 0.5em solid var(--zwart);
+	color: var(--zwart);
 }
 
 .DDBLOGS main > a:first-of-type:focus-visible {
-	border: 0.5em solid var(--oranje);
+	border: 0.5em solid var(--zwart);
 } 
 
+footer section:first-of-type > a:focus-visible {
+	border: 0.5em solid var(--zwart);
+	color: var(--zwart);
+}
+
+footer section aside a:focus-visible {
+	border: 0.5em solid var(--zwart);
+}
+
+section:nth-of-type(5) a:focus-visible {
+	color: var(--zwart);
+}
+
+section:nth-of-type(6) a:focus-visible {
+	color: var(--zwart);
+}
+
 nav a:focus-within {
-	border: 0.5em solid var(--paars);
+	border: 0.5em solid var(--zwart);
 	padding: 0.5em;
 }
 
 section:nth-of-type(8) a:active {
-	border: solid 0.2em var(--oranje);
+	border: solid 0.2em var(--zwart);
 	color: var(--oranje);
 	background-color: var(--wit);
 }
@@ -873,7 +950,33 @@ body {
   transition-duration: 2s;
   }
   
+  iframe {
+	  width: 100%;
+	  padding: 1em;
+  }
+
+  .DDBLOGS main section:nth-of-type(2) {
+	margin: 3.5em 1em 3em 1em;
+    display: flex;
+    flex-direction: column;
+    border-color: var(--licht-grijs);
+    padding: 0em;
+    background-color: var(--wit);
+    border: 0.3em solid var(--licht-grijs);
+	border-radius: 1em;
+	margin-bottom: 5em;
+	transition: all .2s ease-in-out;
+  }
   
-  
-  
-  
+  .DDBLOGS main section:nth-of-type(2) p {
+	background-color: var(--oranje);
+    border-radius: 1em;
+    padding: 0.3em 1.5em;
+    margin: 0em auto 0em 1em;
+    font-size: medium;
+	margin-bottom: 1em;
+  }
+
+.DDBLOGS a:focus-visible { 
+	border:0.5em solid var(--zwart);
+}

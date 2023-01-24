@@ -47,14 +47,3 @@ function handleKeydown(event) {
   }
 }
 
-var logo
-
-logo = document.querySelector("header section > a:nth-of-type(1)");
-
-logo.addEventListener("mouseover", veranderLogo);
-
-function veranderLogo() {
-
-  logo.classList.add("anders");
-
-}
